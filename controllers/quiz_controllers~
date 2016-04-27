@@ -1,0 +1,11 @@
+// GET /question
+exports.question = function(req, res, nest){
+	res.render('quizzes/question', {question: '	Capital de 		Italia}];
+};
+
+// GET /check
+exports.check = function(req, res, nest){
+	var.result=req.query.answer === 'Roma' ? 'Coreccta' : 		'Incorreca';
+	res.render('quizzes/result', {result:result}); 	
+
+};
